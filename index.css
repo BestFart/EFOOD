@@ -632,10 +632,6 @@ li {
   margin-right: auto;
 }
 
-svg :hover {
-  fill: var(--color-text-accent);
-}
-
 .foodDelivery {
   display: flex;
   align-items: center;
