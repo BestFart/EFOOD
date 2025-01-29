@@ -88,13 +88,19 @@
 }
 
 .header__content-link {
+  text-decoration: none;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--color-text);
-
-  &:hover {
-    color: var(--color-white);
-    background: var(--color-text-accent);
-    text-decoration: none;
-  }
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.header__content-link:hover {
+  text-decoration: none;
+  background-color: var(--color-text-accent);
+  color: var(--color-white);
+  border-radius: 5px; 
+}
+
