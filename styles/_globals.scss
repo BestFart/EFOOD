@@ -1,0 +1,52 @@
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-text);
+  background-color: var(--color-base);
+}
+
+section {
+  padding-block: var(--section-padding-y);
+}
+
+a,
+button {
+  transition-duration: var(--transition-duration);
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: var(--color-text-accent);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}

@@ -1,0 +1,15 @@
+@import "styles/normalize",
+"styles/fonts",
+"styles/media",
+"styles/variables",
+"styles/globals";
+
+
+@import "styles/blocks/header",
+"styles/blocks/category",
+"styles/blocks/foodDelivery",
+"styles/blocks/restaurant",
+"styles/blocks/app",
+"styles/blocks/reviews",
+"styles/blocks/subscribe",
+"styles/blocks/footer";
