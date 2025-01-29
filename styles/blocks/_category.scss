@@ -37,6 +37,7 @@
   min-height: 278px;
 
   &-image {
+    margin-top: 20px;
     width: 144px;
     height: 144px;
     object-fit: cover;
@@ -77,6 +78,10 @@
     padding: 6px 12px;
     margin-bottom: 22px;
   }
+
+  &:hover{
+    transform: scale(1.05);
+  }
 }
 
 .swiper {
@@ -97,5 +102,15 @@
   height: 34px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+
+  &:hover svg path {
+    fill: var(--color-text-accent);
+  }
+}
