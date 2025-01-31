@@ -577,6 +577,10 @@ li {
   background-color: var(--color-text-accent);
 }
 
+.active {
+  background-color: var(--color-text-accent);
+}
+
 .product {
   display: flex;
   align-items: center;
