@@ -48,14 +48,14 @@
     margin-bottom: 2px;
   }
 
-  .product-rating {
+  &-rating {
     display: flex;
     gap: 3px;
     margin-bottom: 28px;
     flex-direction: row-reverse;
   }
 
-  .product-rating label {
+  &-rating label {
     height: 22px;
     width: 22px;
     position: relative;
@@ -63,27 +63,27 @@
     padding: 0 2px;
   }
 
-  .product-rating label:nth-of-type(5):after {
+  &-rating label:nth-of-type(5):after {
     animation-delay: 0.5s;
   }
 
-  .product-rating label:nth-of-type(4):after {
+  &-rating label:nth-of-type(4):after {
     animation-delay: 0.4s;
   }
 
-  .product-rating label:nth-of-type(3):after {
+  &-rating label:nth-of-type(3):after {
     animation-delay: 0.3s;
   }
 
-  .product-rating label:nth-of-type(2):after {
+  &-rating label:nth-of-type(2):after {
     animation-delay: 0.2s;
   }
 
-  .product-rating label:nth-of-type(1):after {
+  &-rating label:nth-of-type(1):after {
     animation-delay: 0.1s;
   }
 
-  .product-rating label:after {
+  &-rating label:after {
     transition: all 1s ease-out;
     position: absolute;
     content: "☆";
@@ -91,12 +91,12 @@
     font-size: 22px;
   }
 
-  .product-rating input {
+  &-rating input {
     display: none;
   }
 
-  .product-rating input:checked + label:after,
-  .product-rating input:checked ~ label:after {
+  &-rating input:checked + label:after,
+  &-rating input:checked ~ label:after {
     content: "★";
     color: var(--color-yellow);
     text-shadow: 0 0 10px var(--color-yellow);
