@@ -771,9 +771,20 @@ li {
   -moz-column-gap: 137px;
        column-gap: 137px;
 }
+@media (max-width: 920px) {
+  .foodDelivery {
+    -moz-column-gap: 38px;
+         column-gap: 38px;
+  }
+}
 
 .foodDelivery__content {
   width: 449px;
+}
+@media (max-width: 920px) {
+  .foodDelivery__content {
+    width: 292px;
+  }
 }
 .foodDelivery__content-title {
   font-weight: 500;
