@@ -1,50 +1,74 @@
 .foodDelivery {
-    display: flex;
-    align-items: center;
-    column-gap: 137px;
+  display: flex;
+  align-items: center;
+  column-gap: 137px;
 }
 
 .foodDelivery__content {
-    width: 449px;
+  width: 449px;
 
-    &-title {
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 1.39;
-        margin-bottom: 30px;
-    }
+  &-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.39;
+    margin-bottom: 30px;
 
-    &-subtitle {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.50;
-        opacity: 0.9;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 12px;
     }
+  }
+
+  &-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 13px;
+
+    @include tablet {
+        font-size: 14px;
+    }
+  }
 }
 
-.foodDrelivery__content-subtitle {
-    margin-bottom: 13px;
+.foodDelivery-images {
+  @include tablet {
+    width: 438px;
+    height: 530px;
+  }
 }
 
 .fasted-delivery,
 .delivery-men,
 .restaurant-cafe {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--color-text);
-    margin-bottom: 22px;
-    gap: 26px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--color-text);
+  margin-bottom: 22px;
+  gap: 26px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
 }
 
 .delivery-btn {
-    border-radius: 30px 30px 1px 30px;
-    width: 176px;
-    height: 58px;
-    background: var(--color-text-accent);
-    margin-top: 48px;
-    color: var(--color-white);
+  border-radius: 30px 30px 1px 30px;
+  width: 176px;
+  height: 58px;
+  background: var(--color-text-accent);
+  margin-top: 48px;
+  color: var(--color-white);
+
+  @include tablet {
+    width: 140px;
+    height: 40px;
+    margin-top: 22px;
+  }
 }

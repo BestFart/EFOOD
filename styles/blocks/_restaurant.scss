@@ -1,68 +1,77 @@
 .restaurant__title {
-    text-align: center;
-    font-family: var(-font-family-title);
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 0.83;
-    margin-bottom: 50px;
+  text-align: center;
+  font-family: var(-font-family-title);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 0.83;
+  margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
 }
 
 .restaurant__cards {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 43px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 43px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .restaurant__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--color-white);
+  border-radius: 53px 5px;
+  width: 361px;
+  height: 417px;
+
+  &-title {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-bottom: 14px;
+  }
+
+  &-time {
+    font-family: var(--font-family-light);
+    font-weight: 300;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: var(--color-white);
-    border-radius: 53px 5px;
-    width: 361px;
-    height: 417px;
+    align-items: center;
+    margin-left: 20px;
+    line-height: 1.67;
+    gap: 8px;
+  }
 
-    &-title {
-        font-family: var(--font-family-base);
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.25;
-        margin-top: 22px;
-        margin-left: 20px;
-        margin-bottom: 14px;
-    }
+  &-btn {
+    border-radius: 20px 20px 0 20px;
+    width: 46px;
+    height: 33px;
+    background: var(--color-text-accent);
+    margin-left: 16px;
+  }
 
-    &-time {
-        font-family: var(--font-family-light);
-        font-weight: 300;
-        display: flex;
-        align-items: center;
-        margin-left: 20px;
-        line-height: 1.67;
-        gap: 8px;
-    }
+  &-btn._icon {
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+  }
 
-    &-btn {
-        border-radius: 20px 20px 0 20px;
-        width: 46px;
-        height: 33px;
-        background: var(--color-text-accent);
-        margin-left: 16px;
-    }
-
-    &-btn._icon {
-        display: flex;
-        align-items: center;
-        padding-left: 33px;
-    }
-
-    &-btn._icon::after {
-        content: "";
-        display: block;
-        width: 14px;
-        height: 12px;
-        background-image: url("./images/arrow-small.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+  &-btn._icon::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 12px;
+    background-image: url("./images/arrow-small.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

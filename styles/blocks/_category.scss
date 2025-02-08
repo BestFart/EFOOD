@@ -1,3 +1,7 @@
+.category {
+  padding: 20px;
+}
+
 .category__title {
   text-align: center;
   font-family: var(--font-family-title);
@@ -6,9 +10,10 @@
   margin-bottom: 55px;
 
   @include tablet {
-    font-size: 30px;
-    margin-bottom: 28px;
-   }
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .category__button {
@@ -17,6 +22,11 @@
   justify-content: space-between;
   column-gap: 26px;
   margin-bottom: 39px;
+
+  @include tablet {
+   column-gap: 16px;
+   margin-bottom: 20px;
+  }
 }
 
 .category__button-btn {
@@ -27,8 +37,20 @@
   color: var(--color-text);
   padding: 13px 31px;
 
+  @include tablet {
+    height: 50px;
+    padding: 0;
+  }
+
   &:hover {
     background-color: var(--color-text-accent);
+  }
+}
+
+.category__button-btn img {
+  @include tablet {
+    width: 100px; 
+    height: 30px; 
   }
 }
 

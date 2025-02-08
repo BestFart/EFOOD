@@ -451,14 +451,6 @@ li {
     padding-top: 18px;
   }
 }
-.header__nav-burger {
-  display: none;
-}
-@media (max-width: 480px) {
-  .header__nav-burger {
-    display: block;
-  }
-}
 .header__menu {
   margin-left: auto;
   font-size: 18px;
@@ -591,6 +583,10 @@ li {
   }
 }
 
+.category {
+  padding: 20px;
+}
+
 .category__title {
   text-align: center;
   font-family: var(--font-family-title);
@@ -600,8 +596,9 @@ li {
 }
 @media (max-width: 920px) {
   .category__title {
-    font-size: 30px;
-    margin-bottom: 28px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -613,6 +610,13 @@ li {
        column-gap: 26px;
   margin-bottom: 39px;
 }
+@media (max-width: 920px) {
+  .category__button {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    margin-bottom: 20px;
+  }
+}
 
 .category__button-btn {
   width: 210px;
@@ -622,8 +626,21 @@ li {
   color: var(--color-text);
   padding: 13px 31px;
 }
+@media (max-width: 920px) {
+  .category__button-btn {
+    height: 50px;
+    padding: 0;
+  }
+}
 .category__button-btn:hover {
   background-color: var(--color-text-accent);
+}
+
+@media (max-width: 920px) {
+  .category__button-btn img {
+    width: 100px;
+    height: 30px;
+  }
 }
 
 .active {
@@ -764,15 +781,30 @@ li {
   line-height: 1.39;
   margin-bottom: 30px;
 }
+@media (max-width: 920px) {
+  .foodDelivery__content-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 .foodDelivery__content-subtitle {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   opacity: 0.9;
+  margin-bottom: 13px;
+}
+@media (max-width: 920px) {
+  .foodDelivery__content-subtitle {
+    font-size: 14px;
+  }
 }
 
-.foodDrelivery__content-subtitle {
-  margin-bottom: 13px;
+@media (max-width: 920px) {
+  .foodDelivery-images {
+    width: 438px;
+    height: 530px;
+  }
 }
 
 .fasted-delivery,
@@ -788,6 +820,14 @@ li {
   gap: 26px;
   margin-bottom: 20px;
 }
+@media (max-width: 920px) {
+  .fasted-delivery,
+  .delivery-men,
+  .restaurant-cafe {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
 
 .delivery-btn {
   border-radius: 30px 30px 1px 30px;
@@ -796,6 +836,13 @@ li {
   background: var(--color-text-accent);
   margin-top: 48px;
   color: var(--color-white);
+}
+@media (max-width: 920px) {
+  .delivery-btn {
+    width: 140px;
+    height: 40px;
+    margin-top: 22px;
+  }
 }
 
 .restaurant__title {
@@ -806,11 +853,22 @@ li {
   line-height: 0.83;
   margin-bottom: 50px;
 }
+@media (max-width: 920px) {
+  .restaurant__title {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+}
 
 .restaurant__cards {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 43px;
+}
+@media (max-width: 920px) {
+  .restaurant__cards {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .restaurant__card {
@@ -877,6 +935,12 @@ li {
   line-height: 1.39;
   margin-bottom: 30px;
 }
+@media (max-width: 920px) {
+  .app__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 .app__subtitle {
   font-family: var(--font-family-base);
   font-weight: 400;
@@ -887,11 +951,33 @@ li {
   opacity: 0.9;
   margin-bottom: 30px;
 }
+@media (max-width: 920px) {
+  .app__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 380px;
+  }
+}
 
 .download {
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
+}
+
+@media (max-width: 920px) {
+  .download__appstore,
+  .download__googlrplay {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 920px) {
+  .app__images {
+    width: 538px;
+    height: 362px;
+  }
 }
 
 .reviews__title {
@@ -902,9 +988,21 @@ li {
   text-align: center;
   margin-bottom: 60px;
 }
+@media (max-width: 920px) {
+  .reviews__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 
 .reviews__images {
   border-radius: 24px;
+}
+@media (max-width: 920px) {
+  .reviews__images {
+    width: 538px;
+    height: 362px;
+  }
 }
 
 .reviews__content {
@@ -921,6 +1019,13 @@ li {
   letter-spacing: 0.03em;
   margin-bottom: 74px;
   width: 573px;
+}
+@media (max-width: 920px) {
+  .reviews__subtitle {
+    line-height: 1.25;
+    width: 480px;
+    margin-bottom: 48px;
+  }
 }
 
 .user-title {
