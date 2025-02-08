@@ -16,6 +16,7 @@
           <a href="#" class="header__logo">
             <img src="./images/logo.svg" alt="logo" width="106" height="38" />
           </a>
+          <div class="header__nav-burger">btn</div>
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
@@ -120,9 +121,9 @@
             </div>
           </div>
           <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="product">
+            <div class="swiper-wrapper" id="categorys-container">
+              <!-- <div class="swiper-slide">
+                <article class="product" data-id="01">
                   <img src="images/Burger1.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -140,9 +141,9 @@
                   <p class="product-price">$18.00</p>
                   <button class="product-add" type="button">Add to Cart</button>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="product">
+              </div> -->
+              <!-- <div class="swiper-slide">
+                <article class="product" data-id="02">
                   <img src="images/Burger2.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -162,7 +163,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="03">
                   <img src="images/Burger3.png" alt="burger" class="product-image" />
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -182,7 +183,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="04">
                   <img src="images/Burger4.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -202,7 +203,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="05">
                   <img src="images/Burger5.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -222,7 +223,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="06">
                   <img src="images/Pizza1.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -242,7 +243,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="07">
                   <img src="images/Pizza2.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -262,7 +263,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="08">
                   <img src="images/Sandwich1.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -282,7 +283,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="09">
                   <img src="images/Sandwich2.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -302,7 +303,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="10">
                   <img src="images/AsianFood1.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -322,7 +323,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="11">
                   <img src="images/AsianFood2.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -342,7 +343,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="12">
                   <img src="images/SetMenu1.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -362,7 +363,7 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <article class="product">
+                <article class="product" data-id="13">
                   <img src="images/SetMenu2.png" alt="burger" class="product-image"/>
                   <div class="product-rating">
                     <input type="radio" id="radio1" name="rating"/>
@@ -380,7 +381,7 @@
                   <p class="product-price">$27.00</p>
                   <button class="product-add" type="button">Add to Cart</button>
                 </article>
-              </div>
+              </div> -->
             </div>
             <div class="swiper-button">
               <div class="swiper-button-prev">
@@ -510,10 +511,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">11.00 AM - 10.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://blazepizza.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
               <article class="restaurant__card">
@@ -536,10 +534,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">09.00 AM - 10.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://pizzaranch.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
               <article class="restaurant__card">
@@ -562,10 +557,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">10.00 AM - 12.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://dions.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
               <article class="restaurant__card">
@@ -588,10 +580,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">11.00 AM - 10.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://royelburgerking.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
               <article class="restaurant__card">
@@ -614,10 +603,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">09.00 AM - 10.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://kfc.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
               <article class="restaurant__card">
@@ -640,10 +626,7 @@
                     loading="lazy"
                   />
                   <p class="restaurant__card-timer">10.00 AM - 12.00 PM</p>
-                  <button
-                    class="restaurant__card-btn _icon"
-                    type="button"
-                  ></button>
+                  <a href="https://starfoods.com" class="restaurant__card-btn _icon" target="_blank"></a>
                 </div>
               </article>
             </div>

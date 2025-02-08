@@ -1,10 +1,21 @@
 .header {
-  padding-top: 52px;
-
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 52px;
+
+    @include tablet {
+      padding-top: 18px;
+    }
+  }
+
+  &__nav-burger {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__menu {
@@ -15,6 +26,10 @@
       display: flex;
       align-items: center;
       column-gap: 60px;
+
+      @include tablet {
+        column-gap: 28px;
+      }
     }
 
     &-link:hover {
@@ -62,6 +77,11 @@
   font-size: 18px;
   text-align: center;
   color: var(--color-white);
+
+  @include tablet {
+    width: 104px;
+    height: 32px;
+  }
 }
 
 .header__content {
@@ -75,6 +95,11 @@
     font-size: 66px;
     color: var(--color-text);
     margin-bottom: 23px;
+
+    @include tablet {
+     font-size: 44px;
+     margin-bottom: 14px;
+    }
   }
 
   &-subtitle {
@@ -83,29 +108,43 @@
     line-height: 1.5;
     color: var(--color-text);
     margin-bottom: 44px;
+
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 14px;
+     }
   }
-}
 
-.header__content-list {
-  width: 327px;
-  height: 50px;
-  display: flex;
-  column-gap: 29px;
-}
+  &-list {
+    width: 327px;
+    height: 50px;
+    display: flex;
+    column-gap: 29px;
+  }
 
-.header__content-link {
-  text-decoration: none;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: var(--color-text);
-  padding: 10px 15px;
-  display: block;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  &-link {
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-text);
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.header__content-link:hover {
-  text-decoration: none;
-  background-color: var(--color-text-accent);
-  color: var(--color-white);
-  border-radius: 5px;
+  &-link:hover {
+    text-decoration: none;
+    background-color: var(--color-text-accent);
+    color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  &-images {
+    max-width: 100%;
+    height: auto;
+
+    @include tablet {
+     max-width: 50%;
+     }
+  }
 }
