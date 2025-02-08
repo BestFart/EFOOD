@@ -4,10 +4,16 @@ export function renderCategorys() {
   getCategorys();
 
   async function getCategorys() {
-    const response = await fetch("../data/categorys.json");
-    const categorysArray = await response.json();
-
-    renderCategorys(categorysArray);
+    try {
+      const response = await fetch("../data/categorys.json");
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const categorysArray = await response.json();
+      renderCategorys(categorysArray);
+    } catch (error) {
+      console.error("There was a problem with the fetch operation:", error);
+    }
   }
 
   function renderCategorys(categorysArray) {
